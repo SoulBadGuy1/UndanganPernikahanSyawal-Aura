@@ -140,7 +140,7 @@
               >
                 <div class="col-8 text-end">
                   <h3>Syawal Afrizal</h3>
-                  <p>Insyaallah Kami akan menikahkan putra kedua kami</p>
+                  <p>Putra kedua kami</p>
                   <p>
                     Putra dari Bpk. Suryadi <br />
                     dan <br />Ibu Sri Hastuti
@@ -172,7 +172,7 @@
                 </div>
                 <div class="col-8 text-left">
                   <h3>Aura Saffana Amalia</h3>
-                  <p>Insyaallah kami akan menihkahkan putri pertama kami</p>
+                  <p>Putri pertama kami</p>
                   <p>
                     Putri dari Bpk. Ahmad <br />
                     dan <br />Ibu. Lia Herlina Marlia
@@ -543,7 +543,7 @@
     </footer>
 
     <div id="audio-container">
-      <audio id="song" autoplay loop>
+      <audio id="audio" autoplay loop>
         <source
           src="audio/audio_정승환 - Day & Night [스타트업 - Start Up OST Piano Cover].mp3"
           type="audio/mp3"
@@ -601,13 +601,14 @@
         playAudio();
       }
       function playAudio() {
-        const song = document.querySelector("#song");
-        song.play();
+        const audio = document.querySelector("#audio");
+        audio.play();
       }
       disableScroll();
       // if (!localStorage.getItem("opened")) {
       //   disableScroll();
     </script>
+
     <script>
       window.addEventListener("load", function () {
         const form = document.getElementById("my-form");
@@ -624,6 +625,7 @@
         });
       });
     </script>
+
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const nama = urlParams.get("n") || "";
