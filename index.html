@@ -592,16 +592,23 @@
         window.onscroll = function () {
           window.scrollTo(scrollTop, scrollLeft);
         };
-        rootElement.style.scrollBehavior = ".smooth";
+
+        rootElement.style.scrollBehavior = ".auto";
       }
+
       function enableScroll() {
         window.onscroll = function () {};
-        rootElement.style.scrollBehavior = ".auto";
-        // localStorage.setItem("opened", "true");
+        rootElement.style.scrollBehavior = ".smooth";
+
+        playAudio();
       }
+
+      function playAudio() {
+        const audio = document.querySelector("#audio");
+        audio.play();
+      }
+
       disableScroll();
-      // if (!localStorage.getItem("opened")) {
-      //   disableScroll();
     </script>
 
     <script>
