@@ -592,14 +592,13 @@
           window.scrollTo(scrollTop, scrollLeft);
         };
 
-        rootElement.style.scrollBehavior = ".auto";
+        rootElement.style.scrollBehavior = "auto";
       }
 
       function enableScroll() {
-        window.onscroll = function () {};
-        rootElement.style.scrollBehavior = ".smooth";
-
         playAudio();
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
       }
 
       function playAudio() {
