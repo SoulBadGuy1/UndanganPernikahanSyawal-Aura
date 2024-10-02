@@ -416,7 +416,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Konfirmasi Kehadirann</h2>
+            <h2>Konfirmasi Kehadiran</h2>
             <p>Harap Isi Form dibawah ini untuk Konfirmasi Kehadiran</p>
           </div>
           <form
@@ -541,9 +541,8 @@
         </div>
       </div>
     </footer>
-
     <div id="audio-container">
-      <audio id="audio" autoplay loop>
+      <audio id="song" autoplay loop>
         <source
           src="audio/audio_정승환 - Day & Night [스타트업 - Start Up OST Piano Cover].mp3"
           type="audio/mp3"
@@ -604,8 +603,8 @@
       }
 
       function playAudio() {
-        const audio = document.querySelector("#audio");
-        audio.play();
+        const song = document.querySelector("#song");
+        song.play();
       }
 
       disableScroll();

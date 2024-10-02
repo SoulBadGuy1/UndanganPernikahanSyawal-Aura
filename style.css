@@ -8,6 +8,7 @@ body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
 }
+
 .hero::before {
   content: "";
   position: absolute;
@@ -295,31 +296,7 @@ footer li {
   list-style: none;
   display: inline;
 }
-.audio-icon-wrapper {
-  width: 4rem;
-  height: 4rem;
-  font-size: 4rem;
-  position: fixed;
-  bottom: 3rem;
-  right: 2rem;
-  cursor: pointer;
-  color: white;
-  opacity: 0.5;
-  mix-blend-mode: difference;
-  animation: rotating 4s linear infinite;
-  transform-origin: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes rotating {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 /* media query */
 /* xl */
@@ -373,8 +350,8 @@ footer li {
   .home .heart {
     display: none;
   }
-  .mynavbar{
-    background-color: rgba(104, 101, 101, 0.4)!important;
+  .mynavbar {
+    background-color: rgba(104, 101, 101, 0.4) !important;
     backdrop-filter: none;
   }
 }
